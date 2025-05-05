@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click - Offline</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(0deg, #151414 0%, #242424 100%);
+            color: #FAFAFA;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 1.25rem;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 9.375rem;
+            margin-bottom: 1.875rem;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.9375rem;
+        }
+
+        p {
+            font-size: 1rem;
+            opacity: 0.8;
+            max-width: 25rem;
+            line-height: 1.5;
+        }
+
+        button {
+            background: linear-gradient(90deg, #2665ED 0%, #163A87 100%);
+            color: #FAFAFA;
+            border: none;
+            padding: 0.75rem 1.25rem;
+            border-radius: 1.25rem;
+            margin-top: 1.25rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./src/assets/logo.png" alt="Click Logo" class="logo">
+    <h1>You're currently offline</h1>
+    <p>Please check your internet connection and try again to access your movie reviews.</p>
+    <button onclick="window.location.reload()">Try Again</button>
+</body>
+
+</html>

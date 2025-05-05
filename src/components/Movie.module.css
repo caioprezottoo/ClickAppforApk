@@ -1,0 +1,57 @@
+.movieDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22rem;
+    margin-bottom: 1rem;
+}
+
+.movieImage {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 2/3;
+    height: 60vh;
+    border-radius: 22px;
+    margin-bottom: 0;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.8));
+    object-fit: cover;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--font-content);
+    font-weight: 400;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.8));
+    width: 100%;
+    overflow-wrap: break-word;
+    line-height: 1.4;
+    min-height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+@media (max-height: 700px) {
+    .movieImage {
+        max-height: 40vh;
+    }
+
+    h2 {
+        font-size: 1rem;
+        min-height: 2.2rem;
+    }
+}
+
+@media (max-height: 500px) {
+    .movieImage {
+        max-height: 35vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .movieDiv {
+        width: 100%;
+    }
+}
