@@ -3,7 +3,7 @@
     "short_name": "Click",
     "description": "Track and review your favorite movies",
     "start_url": "/",
-    "display": "standalone",
+    "display": "fullscreen",
     "background_color": "#151414",
     "theme_color": "#2665ED",
     "icons": [
